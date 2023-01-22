@@ -8,16 +8,19 @@ $("#currentDay").text(now.format("dddd, D MMMM YYYY, h:mm:ss a"));
 
 setInterval(updateNow);
 
-// create timeblock via javascript and jquery
+//event delegation to save button to save text in local storage
+var saveButton = $(".saveBtn");
+//var buttonIcon = $(".fas")
 
-// var timeblockContainer = $(".container");
-// var div1 = $("<div>");
-// var divInDiv = $("<div>");
-// var textArea1 = $("<textarea>");
-// var button1 = $("<button>");
+saveButton.on("click", function(){
 
-// var row1 = timeblockContainer.append(div1);
-// div1.append(divInDiv, textArea1, button1);
-// row1.addId("9AM");
-// row1.addClass("row", "time-div");
+    
+    var time = $(this).siblings().attr("id");
+    var textValue = $(this).siblings(".time-block").val();
+    var buttonIcon = $(this).children(".fas");
 
+    localStorage.setItem(time, textValue);
+    buttonIcon.removeClass("fa-unlock");
+    buttonIcon.addClass("fa-lock");
+    
+});
