@@ -27,15 +27,6 @@ $(".time-div").each(function () {
     }
 });
 
-//set button icon class function
-
-
-// function buttonIconCLassSet(){
-//     var buttonIcon = saveButton.children(".fa-unlock");
-//     buttonIcon.removeClass("fa-unlock");
-//     buttonIcon.addClass("fa-lock");
-//  }; 
-
 
 //event delegation to buttons to save text in local storage
 var saveButton = $(".saveBtn");
