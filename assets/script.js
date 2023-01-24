@@ -16,7 +16,7 @@ $(".description").each(function () {
 
     if (currentHour == plannerHour) {
         $(this).addClass("present");
-       
+
     } else if (currentHour < plannerHour) {
         $(this).removeClass("present");
         $(this).addClass("future");
@@ -72,7 +72,7 @@ $(document).ready(function () {
 
 
 //set clear button
-$("#clearButton").on("click", function() {
+$("#clearButton").on("click", function () {
     $("textArea").val("");
     localStorage.clear();
 });
