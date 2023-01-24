@@ -40,8 +40,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border: 1px solid #000000;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   padding-top: 10px;
   
@@ -50,25 +49,24 @@ textarea {
 .past {
   background-color: #dfd9d9;
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .present {
   background-color: #ff8a84;
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .future {
   background-color: #a0fda0;
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 10px;
   background-color: #06aed5;
   color: white;
 }
@@ -80,6 +78,7 @@ textarea {
 
 .btn {
  background-color: rgb(189, 11, 11);
+ border-radius: 10px;
 }
 
 @media only screen and (max-width: 767px) {

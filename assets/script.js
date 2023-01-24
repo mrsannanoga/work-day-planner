@@ -10,9 +10,9 @@ setInterval(updateNow);
 
 //set past, present and future filters to planner
 
-$(".time-div").each(function () {
+$(".description").each(function () {
     var currentHour = moment().format("HH");
-    var plannerHour = $(this).attr("id");
+    var plannerHour = $(this).parent().attr("id");
 
     if (currentHour == plannerHour) {
         $(this).addClass("present");
